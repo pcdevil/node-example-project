@@ -1,1 +1,11 @@
+dist/test-setup.js
+dist/test-setup.js.map
+dist/test-setup.d.ts
+dist/**/*.spec.js
+dist/**/*.spec.js.map
+dist/**/*.spec.d.ts
+
+src/test-setup.ts
+src/**/*.spec.ts
+
 .tmp/

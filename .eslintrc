@@ -10,6 +10,19 @@
 		"plugin:@typescript-eslint/recommended"
 	],
 
+	"overrides": [
+		{
+			"files": [
+				"*.spec.js",
+				"*.spec.ts"
+			],
+
+			"rules": {
+				"no-unused-expressions": "off"
+			}
+		}
+	],
+
 	"parser": "@typescript-eslint/parser",
 
 	"parserOptions": {

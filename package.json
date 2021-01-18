@@ -9,7 +9,9 @@
     "build": "tsc",
     "lint": "eslint --ext .js,.ts --fix src",
     "start": "ts-node src/index.ts",
-    "start:dist": "node dist/index.js"
+    "start:dist": "node dist/index.js",
+    "test": "mocha --require ts-node/register --extensions ts 'src/test-setup.ts' 'src/**/*.spec.ts'",
+    "test:watch": "npm run test -- --watch --watch-files src"
   },
   "engines": {
     "node": "15.6.0"
@@ -28,11 +30,19 @@
   "homepage": "https://github.com/pcdevil/node-example-project#readme",
   "license": "MIT",
   "devDependencies": {
+    "@types/chai": "^4.2.14",
+    "@types/mocha": "^8.2.0",
     "@types/node": "^14.14.21",
+    "@types/sinon": "^9.0.10",
+    "@types/sinon-chai": "^3.2.5",
     "@typescript-eslint/eslint-plugin": "^4.13.0",
     "@typescript-eslint/parser": "^4.13.0",
+    "chai": "^4.2.0",
     "eslint": "^7.18.0",
     "eslint-config-standard": "^16.0.2",
+    "mocha": "^8.2.1",
+    "sinon": "^9.2.3",
+    "sinon-chai": "^3.5.0",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
   }
