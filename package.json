@@ -7,6 +7,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "lint": "eslint --ext .js,.ts --fix src",
     "start": "ts-node src/index.ts",
     "start:dist": "node dist/index.js"
   },
@@ -28,6 +29,10 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^14.14.21",
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
+    "eslint": "^7.18.0",
+    "eslint-config-standard": "^16.0.2",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
   }

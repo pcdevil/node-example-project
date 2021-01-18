@@ -1,0 +1,64 @@
+{
+	"env": {
+		"es6": true,
+		"node": true
+	},
+
+	"extends": [
+		"eslint:recommended",
+		"standard",
+		"plugin:@typescript-eslint/recommended"
+	],
+
+	"parser": "@typescript-eslint/parser",
+
+	"parserOptions": {
+		"ecmaVersion": 2020,
+		"sourceType": "module",
+		"project": "./tsconfig.json"
+	},
+
+	"root": true,
+
+	"rules": {
+		"indent": ["error", "tab"],
+		"semi": ["error", "always"],
+		"no-tabs": "off",
+
+		"@typescript-eslint/brace-style": ["error", "1tbs", {
+			"allowSingleLine": true
+		}],
+		"@typescript-eslint/comma-dangle": ["error", "always-multiline"],
+		"@typescript-eslint/comma-spacing": ["error"],
+		"@typescript-eslint/default-param-last": ["error"],
+		"@typescript-eslint/dot-notation": ["error"],
+		"@typescript-eslint/func-call-spacing": ["error"],
+		"@typescript-eslint/indent": ["error", "tab"],
+		"@typescript-eslint/keyword-spacing": ["error"],
+		"@typescript-eslint/lines-between-class-members": ["error", "always"],
+		"@typescript-eslint/no-array-constructor": ["error"],
+		"@typescript-eslint/no-dupe-class-members": ["error"],
+		"@typescript-eslint/no-duplicate-imports": ["error", {
+			"includeExports": true
+		}],
+		"@typescript-eslint/no-invalid-this": ["error"],
+		"@typescript-eslint/no-shadow": ["error", {
+			"builtinGlobals": true,
+			"hoist": "all"
+		}],
+		"@typescript-eslint/no-throw-literal": ["error"],
+		"@typescript-eslint/no-unused-vars": ["error", {
+			"args": "none"
+		}],
+		"@typescript-eslint/no-use-before-define": ["error"],
+		"@typescript-eslint/no-useless-constructor": ["error"],
+		"@typescript-eslint/quotes": ["error", "single", {
+			"allowTemplateLiterals": true,
+			"avoidEscape": true
+		}],
+		"@typescript-eslint/require-await": ["error"],
+		"@typescript-eslint/semi": ["error"],
+		"@typescript-eslint/space-before-function-paren": ["error", "always"],
+		"@typescript-eslint/space-infix-ops": ["error"]
+	}
+}
