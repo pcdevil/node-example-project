@@ -307,6 +307,7 @@ $RECYCLE.BIN/
 # ignore local temporary folder for prototyping
 # based on: https://stackoverflow.com/a/46354071/1423815
 /.tmp/**
+/dist/**
 # trace every .gitkeep files to maintain directory structure integrity in the repository
 !**/.gitkeep
 
