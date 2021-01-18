@@ -1,0 +1,26 @@
+{
+  "name": "@pcdevil/node-example-project",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "engines": {
+    "node": "15.6.0"
+  },
+  "author": {
+    "name": "Attila Gonda",
+    "email": "pcdevil@users.noreply.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcdevil/node-example-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pcdevil/node-example-project/issues"
+  },
+  "homepage": "https://github.com/pcdevil/node-example-project#readme",
+  "license": "MIT"
+}
